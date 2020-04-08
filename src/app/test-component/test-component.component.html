@@ -1,0 +1,13 @@
+<div class="test-directive">
+  <ng-container [ngTemplateOutlet]="testDirectiveRef?.templateRef || defaultTemplate"></ng-container>
+</div>
+<div class="test-select">
+  <ng-content select="[test-select]"></ng-content>
+</div>
+<div class="test-content">
+  <ng-content></ng-content>
+</div>
+
+<ng-template #defaultTemplate>
+  default instead of directive
+</ng-template>
